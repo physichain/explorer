@@ -13,6 +13,7 @@ import BlocklistPage from 'pages/BlocklistPage';
 import BlockdetailPage from 'pages/BlockdetailPage';
 import TransactionlistPage from 'pages/TransactionlistPage';
 import TransactiondetailPage from 'pages/TransactiondetailPage';
+import TracingPage from 'pages/TracingPage';
 import ActionlistPage from 'pages/ActionlistPage';
 import ActiondetailPage from 'pages/ActiondetailPage';
 import AccountdetailPage from 'pages/AccountdetailPage';
@@ -74,6 +75,7 @@ class App extends Component {
           <WillRoute exact path="/block/:id" component={ BlockdetailPage }/>
           <WillRoute exact path="/transaction-list" component={ TransactionlistPage }/>
           <WillRoute exact path="/transaction/:id" component={ TransactiondetailPage }/>
+          <WillRoute exact path="/tracing/:id?" component={ TracingPage }/>
           <WillRoute exact path="/action-list" component={ ActionlistPage }/>
           <WillRoute exact path="/action/:block_num/:id" component={ ActiondetailPage }/>
           <WillRoute exact path="/account" component={ AccountdetailPage }/>

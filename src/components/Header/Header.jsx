@@ -207,6 +207,9 @@ const Header = (props) => {
               <Link to={`/transaction-list`} className={`nav-link ${pathname === `/transaction-list` || pathname === `/transaction-list/` || matchPath(pathname, 'transaction') ? `active` : ``}`}>TRANSACTIONS</Link>
             </NavItem>
             <NavItem className="px-3">
+              <Link to={`/tracing`} className={`nav-link ${pathname === `/tracing` || pathname === `/tracing/` || matchPath(pathname, 'tracing') ? `active` : ``}`}>TRACING</Link>
+            </NavItem>
+            <NavItem className="px-3">
               <Link to={`/action-list`} className={`nav-link ${pathname === `/action-list` || pathname === `/action-list/` || matchPath(pathname, 'action') ? `active` : ``}`}>ACTIONS</Link>
             </NavItem>
             <NavItem className="px-3">

@@ -14,6 +14,7 @@ import { combinedEpic as blocklistPageEpic, combinedReducer as blocklistPageRedu
 import { combinedEpic as blockdetailPageEpic, combinedReducer as blockdetailPageReducer } from 'pages/BlockdetailPage/BlockdetailPageReducer';
 import { combinedEpic as transactionlistPageEpic, combinedReducer as transactionlistPageReducer } from 'pages/TransactionlistPage/TransactionlistPageReducer';
 import { combinedEpic as transactiondetailPageEpic, combinedReducer as transactiondetailPageReducer } from 'pages/TransactiondetailPage/TransactiondetailPageReducer';
+import { combinedEpic as tracingPageEpic, combinedReducer as tracingPageReducer } from 'pages/TracingPage/TracingPageReducer';
 import { combinedEpic as actionlistPageEpic, combinedReducer as actionlistPageReducer } from 'pages/ActionlistPage/ActionlistPageReducer';
 import { combinedEpic as actiondetailPageEpic, combinedReducer as actiondetailPageReducer } from 'pages/ActiondetailPage/ActiondetailPageReducer';
 import { combinedEpic as accountdetailPageEpic, combinedReducer as accountdetailPageReducer } from 'pages/AccountdetailPage/AccountdetailPageReducer';
@@ -35,6 +36,7 @@ export const rootEpic = combineEpics(
   blockdetailPageEpic,
   transactionlistPageEpic,
   transactiondetailPageEpic,
+  tracingPageEpic,
   actionlistPageEpic,
   actiondetailPageEpic,
   accountdetailPageEpic,
@@ -57,6 +59,7 @@ export const rootReducer = (history) => combineReducers({
   blockdetailPage: blockdetailPageReducer,
   transactionlistPage: transactionlistPageReducer,
   transactiondetailPage: transactiondetailPageReducer,
+  tracingPage: tracingPageReducer,
   actionlistPage: actionlistPageReducer,
   actiondetailPage: actiondetailPageReducer,
   accountdetailPage: accountdetailPageReducer,
